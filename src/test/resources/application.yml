@@ -1,0 +1,20 @@
+# Test configuration
+server:
+  port: 0  # Random port for tests
+
+spring:
+  application:
+    name: openproject-mcp-test
+  ai:
+    mcp:
+      server:
+        name: openproject-mcp-test
+        version: 1.0.0
+
+openproject:
+  base-url: http://localhost:${wiremock.server.port:8089}
+  api-key: test-api-key
+
+logging:
+  level:
+    rocks.euu.mcp: DEBUG

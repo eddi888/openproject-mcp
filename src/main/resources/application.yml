@@ -1,0 +1,27 @@
+server:
+  port: 8787
+
+spring:
+  application:
+    name: openproject-mcp
+  ai:
+    mcp:
+      server:
+        protocol: STREAMABLE
+        name: openproject-mcp
+        version: 1.0.0
+        streamable-http:
+          mcp-endpoint: /mcp
+
+# OpenProject API Configuration
+# Set these via environment variables for security:
+#   OPENPROJECT_BASE_URL=https://your-instance.openproject.com
+#   OPENPROJECT_API_KEY=your-api-key
+openproject:
+  base-url: ${OPENPROJECT_BASE_URL:}
+  api-key: ${OPENPROJECT_API_KEY:}
+
+logging:
+  level:
+    rocks.euu.mcp: DEBUG
+    org.springframework.ai.mcp: DEBUG
