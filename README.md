@@ -4,7 +4,7 @@
 
 Ein MCP (Model Context Protocol) Server für die Integration von OpenProject mit Claude. Ermöglicht es Claude, Gantt-Diagramme und Projektpläne direkt in OpenProject anzulegen.
 
-> **⚠️ Hinweis:** Dies ist ein Proof of Concept und steht in keiner offiziellen Verbindung zu OpenProject GmbH, Anthropic oder anderen genannten Unternehmen. Das Projekt dient ausschließlich zu Demonstrations- und Lernzwecken.
+> **⚠️ WICHTIGER HINWEIS:** Dies ist ein **reines Testprojekt** ohne jegliche Session-Verwaltung, Berechtigungen oder Autorisierung. Es ist **NICHT für den Produktiveinsatz** geeignet! Das Projekt dient ausschließlich zu Demonstrations- und Lernzwecken und steht in keiner offiziellen Verbindung zu OpenProject GmbH, Anthropic, Broadcom oder anderen genannten Unternehmen.
 
 ## Features
 
@@ -101,15 +101,6 @@ Das Script testet alle MCP-Funktionen (Initialize, List Tools, List Projects, et
 3. In claude.ai: **Settings → Integrations → Add MCP Server**
 4. URL eingeben: `https://www.example.com/mcp`
 5. Transport: **HTTP** (Streamable HTTP)
-
-## Entwicklung in GitHub Codespaces
-
-Dieses Projekt enthält eine `.devcontainer` Konfiguration für GitHub Codespaces:
-
-1. Repo zu GitHub pushen
-2. Auf GitHub: **Code → Codespaces → Create codespace**
-3. Umgebungsvariablen in Codespaces Secrets setzen
-4. `mvn spring-boot:run` ausführen
 
 ## Projektstruktur
 
